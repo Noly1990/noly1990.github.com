@@ -1,0 +1,22 @@
+.myContainer {
+    margin-top: 5rem;
+}
+
+.main {
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.mySidebar {
+    width: 25%;
+    position: absolute !important;
+    left:0;
+    z-index: 20;
+    bottom:4rem;
+}
+
+li a.nav-link { 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

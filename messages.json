@@ -1,0 +1,17 @@
+{
+    "messagesNum":5,
+    "message1":{
+        "id":20001,
+        "nickname":"Lily",
+        "time":"2017-3-7 18:00",
+        "text":"一楼沙发，很赞",
+        "iconUrl":"http://aaaaaa.com"
+    },
+    "message2":{
+        "id":20002,
+        "nickname":"Lucy",
+        "time":"2017-3-8 18:00",
+        "text":"二楼沙发，很赞",
+        "iconUrl":"http://aaaaaa.com"
+    }
+}

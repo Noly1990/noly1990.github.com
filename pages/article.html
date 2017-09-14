@@ -7,20 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="./js/utilis.js"></script>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.bootcss.com/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+    <script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+    <script src="../js/utilis.js"></script>
+    <script src="../js/article.js"></script>
     <title>严骏的Blog空间</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark myNav">
-        <a class="navbar-brand" href="./index.html">Noly's Blog</a>
+        <a class="navbar-brand" href="../index.html">Noly's Blog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
             aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,14 +30,14 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">首页 <span class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">首页 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./article.html">文章</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/article.html">文章</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/message.html">留言</a>
+                    <a class="nav-link" href="./message.html">留言</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关于</a>
@@ -53,41 +55,38 @@
         </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron myjumbotron">
-        <div class="container">
-            <h1 class="display-5">欢迎来到我的博客空间</h1>
-            <p>这是我根据Bootstrap 4的官方文档+Jquery构建的一个个人博客的模板站
-            </p>
-            <p><a class="btn btn-primary btn-lg" href="./pages/article.html?aimId=10000" role="button">详情请见 »</a></p>
-        </div>
-    </div>
 
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2 class="titleH">加载中...</h2>
-                <p class="articleContent">加载中...</p>
-                <p><a class="btn btn-primary artileLink" href="#" role="button">详见 »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2 class="titleH">加载中...</h2>
-                <p class="articleContent">加载中...</p>
-                <p><a class="btn btn-primary artileLink" href="#" role="button">详见 »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2 class="titleH">加载中...</h2>
-                <p class="articleContent">加载中...</p>
-                <p><a class="btn btn-primary artileLink" href="#" role="button">详见 »</a></p>
-            </div>
-        </div>
-
-        <hr>
-
-
-    </div>
     <!-- /container -->
+
+    <div class="container-fluid myContainer">
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar" id="sideNav">
+                <ul class="nav nav-pills flex-column" id="titleNav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">博客简介 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" id="loading">
+                        <a class="nav-link" href="#">加载中...</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">文章二</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">文章三</a>
+                    </li> -->
+                </ul>
+            </nav>
+
+            <main class="col-sm-9 ml-sm-auto col-md-10 pt-3 main" role="main">
+                <h1 class="title" id="articleTitle">首页说明</h1>
+                <h5 class="articleTime text-secondary" id="articleTime">2017-9-13 18:00</h5>
+                <div class="articleContent" id="articleContent">
+                    <p>载入中...</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
 
     <footer class="footer bg-primary">
         <p class="text-center">© Noly-2017</p>
@@ -101,8 +100,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">关于本网站</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                 </div>
                 <div class="modal-body">
                     本人的个人博客<br> Noly.s Blog v1.0.0
@@ -120,8 +119,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">关于作者</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                 </div>
                 <div class="modal-body">
                     严骏<br> Github:
@@ -141,8 +140,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">关于其他</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
+                                <span aria-hidden="true">&times;</span>
+                              </button>
                 </div>
                 <div class="modal-body">
                     更新...
@@ -153,9 +152,6 @@
             </div>
         </div>
     </div>
-
-
-    <script src="./js/main.js"></script>
 </body>
 
 </html>

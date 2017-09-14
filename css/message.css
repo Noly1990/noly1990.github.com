@@ -1,0 +1,27 @@
+.myContainer {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.list-group a:hover {
+    background-color: #dae0e5;
+}
+.list-group a:focus {
+    background-color: #dae0e5;
+}
+
+.btn-group {
+    margin-top: 1rem;
+}
+
+#editor {
+
+    margin: 1rem .5rem .5rem .5rem;
+}
+
+@media screen and (max-width: 576px) {
+    #editor {
+            width: 90%;
+            margin: 1rem .5rem .5rem .5rem;
+    }
+}

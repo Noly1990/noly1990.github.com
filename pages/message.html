@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/message.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="../js/utilis.js"></script>
+    <!-- 富文本编辑器 -->
+    <script src="https://unpkg.com/wangeditor@3.0.8/release/wangEditor.min.js"></script>
+    <script src="../js/message.js"></script>
+    <title>严骏的Blog空间</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark myNav">
+        <a class="navbar-brand" href="../index.html">Noly's Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./article.html">文章</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./message.html">留言</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关于</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal01">关于本网站</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal02">关于我</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal03">关于其他</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text">
+                <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- /container -->
+    <div class="container myContainer">
+        <div class="row">
+            <div class="col-12">
+                <div class="list-group" id="messageBox">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">昵称1</h5>
+                            <small>4 days ago</small>
+                        </div>
+                        <p class="mb-1">这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。</p>
+                        <small>18：00</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-light">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">昵称2</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。</p>
+                        <small class="text-muted">18：00</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">昵称3</h5>
+                            <small class="text-muted">2 days ago</small>
+                        </div>
+                        <p class="mb-1">这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。</p>
+                        <small class="text-muted">18：00</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-light">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">昵称4</h5>
+                            <small class="text-muted">1 days ago</small>
+                        </div>
+                        <p class="mb-1">这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。这是一些留言，一点点留言。</p>
+                        <small class="text-muted">18：00</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="editor">
+                    <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">昵称</span>
+                    <input id="nickname" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary btn-sm" id="btnReset">清空</button>
+                    <button type="button" class="btn btn-primary btn-sm" id="submit">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer bg-primary">
+        <p class="text-center">© Noly-2017</p>
+    </footer>
+
+
+
+
+
+
+
+    <!-- about modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">关于本网站</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    本人的个人博客<br> Noly.s Blog v1.0.0
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">关于作者</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                </div>
+                <div class="modal-body">
+                    严骏<br> Github:
+                    <a href="https://github.com/Noly1990">https://github.com/Noly1990</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">关于其他</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                </div>
+                <div class="modal-body">
+                    更新...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
